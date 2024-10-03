@@ -1,0 +1,13 @@
+.container{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+h1{
+    padding: 1rem;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(48%) sepia(69%) saturate(511%) hue-rotate(86deg) brightness(93%) contrast(99%);
+}

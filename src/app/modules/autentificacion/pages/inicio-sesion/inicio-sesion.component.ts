@@ -158,6 +158,22 @@ export class InicioSesionComponent {
           icon: "success"
         });
 
+        // Almacenar el rol del usuario en el servicio de autentificación 
+        this.servicioAuth.enviarRolUsuario(usuarioData.rol);
+
+        if(usuarioData.rol == "admin"){
+          console.log("Inicio de sesion de usuario administrador")
+
+          //Si es administrador, redirecciona a la vista de 'admin'
+          this.servicioRutas.navigate(['/admin']);
+        }
+        else{
+          console.log("Inicio de sesión de usuario visitante");
+
+          // Si es visitante, redirecciona a la vista de 'inicio'
+          this.servicioRutas.navigate(['/inicio']);
+        }
+
         this.servicioRutas.navigate(['/inicio']);
       })
       .catch(err => {

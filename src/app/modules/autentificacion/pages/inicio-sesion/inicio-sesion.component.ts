@@ -172,9 +172,7 @@ export class InicioSesionComponent {
 
           // Si es visitante, redirecciona a la vista de 'inicio'
           this.servicioRutas.navigate(['/inicio']);
-        }
-
-        this.servicioRutas.navigate(['/inicio']);
+        } 
       })
       .catch(err => {
         Swal.fire({

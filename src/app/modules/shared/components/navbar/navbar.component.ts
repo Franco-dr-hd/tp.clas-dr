@@ -31,6 +31,7 @@ export class NavbarComponent {
     this.servicioRutas.navigate(['/']); // redigirimos a la raíz de la página
     this.logueado = true;
   }
+  
   //Funcion Para Modo Oscuro
 
   cambiarFondo(){

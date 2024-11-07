@@ -55,6 +55,7 @@
             </div>
 
             <div class="modal-footer">
+                <input type="number" placeholder="Cantidad deseada del producto" [(ngModel)]="stock">
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="agregarProducto(productoSeleccionado)">Agregar</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>

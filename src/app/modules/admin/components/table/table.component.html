@@ -22,6 +22,7 @@
             <td>{{producto.precio}}</td>
             <td>{{producto.descripcion}}</td>
             <td>{{producto.categoria}}</td>
+            <td>{{producto.stock}}</td>
 
             <!-- ACCIONES -->
             <!-- EDITAR-->
@@ -107,6 +108,11 @@
                     <label class="form-label">Ingrese texto alternativo:</label>
                     <input class="form-control" type="text" formControlName="alt"
                         placeholder="Ingrese un texto alternativo">
+                </div>
+
+                <div class="mb-3">
+                    <label class = "from-label">Ingrese stock de su producto:</label>
+                    <input class="form-control" type="number" formControlName="stock">
                 </div>
             </div>
 

@@ -1,1 +1,14 @@
-<p>pedido works!</p>
+<div class="container">
+    <h2>Carrito de compras</h2>
+    <div class="row">
+        <div class="col-lg-4">
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let pedido of productos">
+                    {{pedido.cantidad}}   {{pedido.producto.nombre}} - ${{pedido.total}}
+
+                    <button class="btn btn-danger" (click)="quitarPedido(pedido)"><mat-icon>delete</mat-icon></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

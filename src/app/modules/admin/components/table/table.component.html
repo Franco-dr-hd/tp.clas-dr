@@ -7,6 +7,7 @@
             <th scope="col">Precio</th>
             <th scope="col">Descripción</th>
             <th scope="col">Categoría</th>
+            <th scope="col">Stock</th>
             <th scope="col">Acciones</th>
         </tr>
     </thead>
@@ -178,6 +179,13 @@
                     <input class="form-control" type="text" formControlName="alt"
                         placeholder="{{productoEdit.alt}}">
                 </div>
+
+                <div class="mb-3">
+                    <label class = "from-label">Ingrese stock de su producto:</label>
+                    <input class="form-control" type="number" formControlName="stock" placeholder="{{productoEdit.stock}}">
+                </div>
+            </div>
+
             </div>
 
             <!-- ACCIONES DEL MODAL -->
@@ -187,7 +195,6 @@
             </div>
         </div>
     </div>
-</div>
 
 <!-- MODAL PARA ELIMINAR PRODUCTO -->
 <div class="modal fade" *ngIf="modalVisibleProducto" id="eliminarProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

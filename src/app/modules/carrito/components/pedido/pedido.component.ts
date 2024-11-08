@@ -32,4 +32,8 @@ export class PedidoComponent {
       }
     })
   }
+
+  quitarPedido(pedido: Pedido){
+    this.servicoCarrito.borrarPedido(pedido)
+  }
 }
